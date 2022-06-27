@@ -397,6 +397,7 @@ i {
 
 .nuestrosRepr {
     grid-area: section;
+    height: 20px;
 }
 
 .opinionesClientes {
