@@ -20,16 +20,15 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto 80px;
+    grid-template-rows: auto auto auto auto auto auto 100px;
     grid-template-areas: "navbar  navbar  navbar  navbar"
                         "header   header  header  header"
                         "main     main    main    main"
                         "section section section section"
                         "section section section section"
                         "section section section section"
-                        "section section section section"
                         "footer  footer  footer  footer";
-                }
+}
 
 .navHeader {
     grid-area: navbar;
@@ -128,7 +127,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-padding-top: 60px;
+    padding-top: 60px;
 
 }
 
@@ -341,7 +340,8 @@ i {
         margin: 15px;
     }
 }
-.offalquileres{
+
+.offalquileres {
     color: #e39403;
 }
 
@@ -384,10 +384,42 @@ i {
     .sobreNos {
         display: block;
         flex-wrap: wrap;
+
     }
 
     .textoSN {
         margin: 15px;
+    }
+}
+
+.inversionAdds {
+    grid-area: section;
+    display: flex;
+    margin-top: 300px;
+    width: 100%;
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #e39403;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .inversionAdds {
+        display: block;
+        flex-wrap: wrap;
+        margin-top: 700px;
+        padding: 50px;
+        align-content: center;
+    }
+
+    .infoInversion {
+        padding: 30px;
+        align-content: center;
+        justify-content: center;
     }
 }
 
@@ -397,23 +429,24 @@ i {
 
 .nuestrosRepr {
     grid-area: section;
+    height: 20px;
 }
 
-.opinionesClientes {
-    grid-area: section;
-}
+
 
 .pie {
     grid-area: footer;
-    background-color: rgba(0, 0, 0, 0.699);
-    height: 30px;
     display: flex;
+    ;
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 80px;
+    width: 100%;
+
 }
 
 .descFooter {
     display: flex;
-    justify-content: space-between;
-}
+    }
 
 /*Fin page Index*/
 
@@ -430,9 +463,9 @@ i {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 70px 300px auto 100px;
     grid-template-areas: "nav    nav    nav    nav    nav"
-                        "header header header header header"
-                        "main   main   main   aside  aside "
-                        "footer footer footer footer footer";
+        "header header header header header"
+        "main   main   main   aside  aside "
+        "footer footer footer footer footer";
 }
 
 .principalAlquilar {
@@ -530,8 +563,10 @@ textarea {
         padding-top: 100px;
         margin: 15px;
     }
+
     .inputForm {
         margin: 25px;
     }
 }
+
 /* Fin Page Alquiler*/
