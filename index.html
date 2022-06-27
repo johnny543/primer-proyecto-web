@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="shortcut icon" href="./assets/icons/Logo Tu_Nuevo_Hogar.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/2e5f2192a4.js" crossorigin="anonymous"></script>
 
 </head>
@@ -76,14 +77,15 @@
 		<div class="title-cards">
 			<h2>Destacados en Alquileres</h2>
 		</div>
-		<div class="container-card">
+		<div class="container-card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
-			<div class="card">
+			<div class="card" >
 				<figure>
 					<img src="./assets/img/depto04.jpg">
 				</figure>
 				<div class="contenido-card">
-					<h3>Alquiler Mensual: <div class="offalquileres">780 USD</div></h3>
+					<h3>Alquiler Mensual: <div class="offalquileres">780 USD</div>
+					</h3>
 					<p>2 habitacion, 2 baño, zona centica, estacionamiento privado, 5to piso.</p>
 					<a href="#">Ver Más</a>
 				</div>
@@ -93,7 +95,8 @@
 					<img src="./assets/img/depto05.jpg">
 				</figure>
 				<div class="contenido-card">
-					<h3>Alquiler Mensual: <div class="offalquileres">500 USD</div></h3>
+					<h3>Alquiler Mensual: <div class="offalquileres">500 USD</div>
+					</h3>
 					<p>Semi-amoblado. 1 habitacion, 1 baño, garage 1 auto.</p>
 					<a href="#">Ver Más</a>
 				</div>
@@ -103,7 +106,8 @@
 					<img src="./assets/img/depto01.jpg">
 				</figure>
 				<div class="contenido-card">
-					<h3>Alquiler Mensual: <div class="offalquileres">900 USD</div> </h3>
+					<h3>Alquiler Mensual: <div class="offalquileres">900 USD</div>
+					</h3>
 					<p>Totalmente amoblado. 1 habitacion, 1 baño, balcon con vista a la playa.</p>
 					<a href="#">Ver Más</a>
 				</div>
@@ -132,8 +136,23 @@
 		</div>
 
 	</section>
-	<section class="inversionPozo">
-
+	<section class="inversionAdds" data-aos="fade-left">
+		<div>
+			<h2 class="infoInversion">500 +</h2>
+			<p>Propiedades disponibles</p>
+		</div>
+		<div>
+			<h2 class="infoInversion">200 +</h2>
+			<p>Propietarios satisfechos</p>
+		</div>
+		<div>
+			<h2 class="infoInversion">800 +</h2>
+			<p>Propiedades administradas</p>
+		</div>
+		<div>
+			<h2 class="infoInversion">$300 millones</h2>
+			<p>Carteras Negocios realizados</p>
+		</div>
 	</section>
 	<section class="nuestrosRepr">
 
@@ -145,10 +164,16 @@
 	<footer class="pie">
 		<div class="descFooter">
 			<h5>@Copyright 2022 Todos Los Derechos Reservados.</h5>
-			<img src="./assets/icons/b2cb58f9eee.png" alt="redes sociales">
+			<img class="logoRedesFooter" src="./assets/icons/b2cb58f9eee.png" alt="redes sociales">
 		</div>
 
 	</footer>
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
